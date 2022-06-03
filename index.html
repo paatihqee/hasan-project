@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+    <!-- AOS Animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -32,18 +35,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto menu-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="#hero">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Karya</a>
+                <a class="nav-link" href="#creature">Karya</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kontak</a>
+                <a class="nav-link" href="#contact">Kontak</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto menu-2">
               <li class="nav-item">
-                <a id="language" class="nav-link d-inline" href="#">Inggris</a>
+                <a id="language" class="nav-link d-inline" href="/index2.html">Inggris</a>
                 <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                   <path
                     d="M24 24h-2.784l-1.07-3h-4.875l-1.077 3h-2.697l4.941-13h2.604l4.958 13zm-4.573-5.069l-1.705-4.903-1.712 4.903h3.417zm-9.252-12.804c.126-.486.201-.852.271-1.212l-2.199-.428c-.036.185-.102.533-.22 1-.742-.109-1.532-.122-2.332-.041.019-.537.052-1.063.098-1.569h2.456v-2.083h-2.161c.106-.531.198-.849.288-1.149l-2.147-.645c-.158.526-.29 1.042-.422 1.794h-2.451v2.083h2.184c-.058.673-.093 1.371-.103 2.077-2.413.886-3.437 2.575-3.437 4.107 0 1.809 1.427 3.399 3.684 3.194 2.802-.255 4.673-2.371 5.77-4.974 1.134.654 1.608 1.753 1.181 2.771-.396.941-1.561 1.838-3.785 1.792v2.242c2.469.038 4.898-.899 5.85-3.166.93-2.214-.132-4.635-2.525-5.793zm-2.892 1.531c-.349.774-.809 1.544-1.395 2.15-.09-.646-.151-1.353-.184-2.108.533-.07 1.072-.083 1.579-.042zm-3.788.724c.062.947.169 1.818.317 2.596-1.996.365-2.076-1.603-.317-2.596zm11.236-1.745l-2.075-5.533 5.414-1.104-.976 1.868c2.999 2.418 4.116 5.645 4.532 8.132-1.736-2.913-3.826-4.478-5.885-5.321l-1.01 1.958zm-7.895 10.781l1.985 5.566-5.43 1.016 1.006-1.852c-2.96-2.465-4.021-5.654-4.397-8.148 1.689 2.94 3.749 4.483 5.794 5.36l1.042-1.942zm10.795-6.029"
@@ -59,7 +62,7 @@
 
     <!-- Hero Start -->
     <section class="hero" id="hero">
-      <div class="content-hero">
+      <div class="content-hero" data-aos="fade-up" data-aos-duration="2500">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-5">
@@ -69,7 +72,7 @@
               <p>Saya Muhammad Hasan Husein, Junior Videographer & Video Editor. Salah satu mahasiswa Sistem Informasi Universitas Trisakti.</p>
               <p>Disamping perkuliahan, kesibukan sehari-hari adalah mengekspresikan minat bakat ke dalam suatu karya video. Sejak kecil telah menyukai editing video dan terus mendalaminya sampai sekarang.</p>
             </div>
-            <div class="col-md-5 text-center">
+            <div class="col-md-5 imghero">
               <img src="./img/Profil Picture.png" alt="" width="360px" />
             </div>
           </div>
@@ -80,14 +83,14 @@
 
     <!-- Creature Start -->
     <section class="creature" id="creature">
-      <div class="container">
+      <div class="container" data-aos-offset="1000">
         <div class="row justify-content-center">
           <div class="col-md-10">
-            <h2>My Creature</h2>
+            <h2>My Works</h2>
           </div>
         </div>
         <div class="row rc justify-content-center">
-          <div class="col-md-5 text-center">
+          <div class="col-md-5 text-center" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
             <a href="#"><img src="./img/Thumbnail Video 1.png" alt="" width="100%" /></a>
           </div>
           <div class="col-md-5 col-desc">
@@ -102,8 +105,8 @@
             <p>Dalam video, itu adalah temanku, dia bilang kepadaku untuk dibuatkan sebuah musik video yang singkat. lagi dan lagi, kemampuanku dalam mengedit masih belum cukup baik.</p>
             <a href="#">Check It Out</a>
           </div>
-          <div class="col-md-5 text-center theimg">
-            <img src="./img/Thumbnail Video 2.png" width="100%" alt="" />
+          <div class="col-md-5 text-center theimg" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400">
+            <a href="#"><img src="./img/Thumbnail Video 2.png" width="100%" alt="" /></a>
           </div>
         </div>
         <div class="row rc justify-content-center">
@@ -115,14 +118,90 @@
     </section>
     <!-- Creature End -->
 
+    <!-- Tools Start-->
+    <section class="tools" id="tools">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2>Tools & Skills</h2>
+          </div>
+        </div>
+        <div class="row rt justify-content-around">
+          <div class="col-3 text-center">
+            <img src="./img/davinci.png" alt="" width="160px" />
+            <h5 style="margin-top: 20px">Davinci Resolve</h5>
+          </div>
+          <div class="col-3 text-center">
+            <img src="./img/Filmora.png" alt="" width="160px" />
+            <h5 style="margin-top: 20px">Filmora</h5>
+          </div>
+          <div class="col-3 text-center">
+            <img src="./img/Photoshop.png" alt="" width="160px" />
+            <h5 style="margin-top: 20px">Adobe Photoshop</h5>
+          </div>
+        </div>
+        <div class="row rt justify-content-around">
+          <div class="col-3 text-center">
+            <img src="/img/capcut.png" alt="" width="160px" />
+            <h5 style="margin-top: 20px">Capcut Editor</h5>
+          </div>
+          <div class="col-3 text-center">
+            <img src="/img/VN.png" alt="" width="160px" />
+            <h5 style="margin-top: 20px">VN Editor</h5>
+          </div>
+          <div class="col-3 text-center">
+            <img src="/img/lightroom.png" alt="" width="160px" />
+            <h5 style="margin-top: 20px">VN Editor</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tools End -->
+
+    <!-- Contact Start -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col p0 text-center">
+            <h2>Tertarik bekerja sama dengan saya ?</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col p1 text-center">
+            <p>untuk keperluan bisnis silahkan kirim email ke</p>
+            <a href="#"><p>hasanhusein1245@gmail.com</p></a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col p2 text-center">
+            <p>anda juga dapat menghubungi saya melalui</p>
+            <div class="contact-icon">
+              <a href=""><img src="/img/Line Icon.png" alt="" /></a>
+              <a href=""><img src="/img/Instagram Icon.png" alt="" /></a>
+              <a href=""><img src="/img/LinkedIn Icon.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <footer class="footer" id="footer">
+              <p>Copyright © 2022 Sanseinnn. All Rights Reserved.</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!-- My JS -->
     <script type="text/javascript">
       var nav = document.querySelector("nav");
 
       window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
+        if (window.pageYOffset > 20) {
           nav.classList.add("bg-nav", "shadow");
           document.getElementById("language").style.color = "white";
           document.getElementById("svg").style.fill = "white";
@@ -132,6 +211,11 @@
           document.getElementById("svg").style.fill = "black";
         }
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
