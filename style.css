@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+.vid404 {
+  font-family: "Poppins", sans-serif;
+}
+
+.vid404 h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.vid404 p {
+  font-size: 20px;
+  color: black;
+}
+
 h1,
 h2,
 h3,
